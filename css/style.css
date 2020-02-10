@@ -1,0 +1,596 @@
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,600,700,800|Open+Sans:400,600,700,800&display=swap');
+
+/*
+font-family: 'Montserrat', sans-serif;
+font-family: 'Open Sans', sans-serif;
+*/
+
+
+*{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	text-decoration: none;
+}
+
+h1{
+	color: #28377e;
+	font-size: 30px;
+	font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+}
+
+p{
+	color: #b1b0b1;
+	font-size: 13px ;
+	font-family: 'Open Sans', sans-serif; 
+}
+
+.container{
+
+	width: 85%;
+	margin: auto;
+   
+}
+
+header{
+
+	display: flex;
+	justify-content: space-between;
+	height: 70px;
+	
+	align-items: center;
+
+
+}
+
+.logo{
+	width: 20%;
+	
+
+}
+
+.nav{
+	width: 60%;
+
+}
+
+.nav ul{
+
+	display: flex;
+	justify-content: flex-end;
+ 
+
+}
+
+.nav ul li{
+
+	margin-left: 20px;
+
+	
+}
+
+.nav ul li a{
+	font-size: 14px;
+	color: #204f87;
+	font-weight: 600;
+	text-transform: uppercase;
+	
+}
+
+.banner{
+	background-image: url(../images/banner.png);
+	height: 460px;
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.content{
+	position: absolute;
+	width: 480px;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+
+
+}
+
+.content h1{
+	color: white;
+	font-size: 48px;
+	font-weight: 700;
+	position: relative;
+}
+
+.icon{
+	position: absolute;
+	bottom: 20%;
+	left: 50%;
+	transform: translate(-50%,-20%);
+	animation: icon-ani 1s linear infinite;
+	animation-direction: alternate;
+
+}
+
+.icon i{
+	color: white;
+	font-size: 24px;
+
+}
+
+@keyframes icon-ani{
+	0%{
+		transform: translate(-50%,0%);	
+	}
+
+	100%{
+        transform: translate(-50%,-100%);
+		
+	}
+		
+	
+}
+
+
+.who-we-are-content{
+      margin-top: 100px;
+      width: 50%;
+      float: left;
+      position: relative;
+}
+
+.who-we-are-content::after{
+      content: "";
+      position: absolute;
+      width: 68px;
+      height: 6px;
+      background: #f15a28;
+      top: 0;
+
+}
+
+.who-we-are-content h1{
+     margin-top: 15px;
+}
+
+.who-we-are-content p{
+
+	margin: 20px 0;
+	padding-right: 100px;
+
+
+}
+
+.who-we-are-image{
+	width: 50%;
+	float: right;
+	margin-top: 80px;
+
+}
+
+.who-we-are-image img{
+	width: 55%;
+	margin-left: 30px;
+	height: 380px;
+
+}
+
+.who-we-are{
+	overflow: hidden;
+	margin-bottom: 100px;
+}
+
+.what-we-do{
+
+	background: #f7f8f8;
+	background-image: url(../images/whatwedo04.png);
+    background-size: 900px;
+	background-repeat: no-repeat;
+	background-position: right bottom;
+	margin-top: 30px;
+   
+
+
+}
+
+.header{
+    padding: 50px 0px;
+    width: 222px;
+    margin: auto;
+    position: relative;
+    padding-bottom: 50px;
+}
+
+.header h1{
+     margin-top: 15px;
+}
+
+.header::before{
+	content: '';
+	position: absolute;
+	width: 30%;
+	height: 5px;
+	background: #f15a28;
+	left: 50%;
+	transform: translateX(-50%);
+
+
+}
+
+.what-we-do-content{
+     display: flex;
+   
+}
+
+.what-we{
+
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-30%);
+	color: white;
+	text-transform: uppercase;
+	transition: all 0.4s ease;
+
+
+}
+
+.what-we{
+    opacity: 0;
+}
+
+.items{
+    padding: 10px;
+    position: relative;
+}
+
+.items:hover .what-we{
+	opacity: 1;
+	transform: translate(-50%,-50%);
+
+}
+
+
+.items i{
+
+    position: absolute;
+    left: 20%;
+    color: white;
+    font-size: 30px;
+    transform: translateX(-50%);
+    bottom: 20%;
+    opacity: 0;
+    transition: all 0.4s ease;
+}
+
+.img::after{
+    content: '';
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	bottom: 0;
+	left: 0;
+    opacity: 0;
+    transition: all 0.4s ease;
+	/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#3b679e+0,207cca+42,2b88d9+46,2e3386+100&0+0,1+100 */
+background: -moz-linear-gradient(top,  rgba(59,103,158,0) 0%, rgba(32,124,202,0.42) 42%, rgba(43,136,217,0.46) 46%, rgba(46,51,134,1) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  rgba(59,103,158,0) 0%,rgba(32,124,202,0.42) 42%,rgba(43,136,217,0.46) 46%,rgba(46,51,134,1) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  rgba(59,103,158,0) 0%,rgba(32,124,202,0.42) 42%,rgba(43,136,217,0.46) 46%,rgba(46,51,134,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#003b679e', endColorstr='#2e3386',GradientType=0 ); /* IE6-9 */
+
+
+}
+.items:hover .img::after{
+	opacity: 1;
+	top: 0;
+}
+
+.img{
+	position: relative;
+	margin-bottom: 50px;
+}
+
+
+.items:hover i{
+	opacity: 1;
+	transform: translateX(-50%);
+	left: 50%;
+
+}
+
+
+.items img{
+     
+
+}
+
+.our-att{
+    background-image: url(../images/back3.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+.our{
+    display: flex;
+}
+.our-att .container{
+}
+.our-att-heading{
+    margin-top: 300px;
+    position: relative;
+
+}
+.our-att-heading h1{
+    color: #fff;
+    width: 100px;
+    margin-top: 30px;
+}
+
+.our-att-heading p{
+    width: 80%;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    color: #929dcf;
+}
+a{
+	color: #f2622c;
+	font-size: 20px;
+
+}
+.our-att-heading::before{
+	content: "";
+	position: absolute;
+	width: 60px;
+	height: 4px;
+	background: #f2622c;
+}
+.our-att-img{
+    margin-top: 150px;
+    margin-bottom: 150px;
+}
+
+.att{
+    margin-bottom: 20px;
+    width: 700px;
+    display: flex;
+}
+.our-att-items{
+    position: relative;
+    padding: 10px;
+}
+.att-img{
+    position: relative;
+}
+.att-img::after{
+    content: "";
+    width: 100%;
+    position: absolute;
+    height: 100%;
+    bottom: 0;
+    left: 0;
+    opacity: 0;
+    transition: all .4s ease;
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#000000+1,207cca+33,207cca+33,2989d8+37,2989d8+37,207cca+41,2989d8+41,207cca+41,2e3386+100&0+1,1+100 */
+background: -moz-linear-gradient(top,  rgba(0,0,0,0) 1%, rgba(32,124,202,0.32) 33%, rgba(41,137,216,0.36) 37%, rgba(32,124,202,0.4) 41%, rgba(46,51,134,1) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  rgba(0,0,0,0) 1%,rgba(32,124,202,0.32) 33%,rgba(41,137,216,0.36) 37%,rgba(32,124,202,0.4) 41%,rgba(46,51,134,1) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  rgba(0,0,0,0) 1%,rgba(32,124,202,0.32) 33%,rgba(41,137,216,0.36) 37%,rgba(32,124,202,0.4) 41%,rgba(46,51,134,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#2e3386',GradientType=0 ); /* IE6-9 */
+
+}
+.our-att-items:hover .att-img::after{
+    opacity: 1;
+    top: 0;
+}
+.att-img img{
+
+}
+.att-img-content{
+    position: absolute;
+
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -30%);
+    transition: all .4s ease;
+    color: #fff;
+    text-transform: uppercase;
+}
+.our-att-items:hover .att-img-content{
+    opacity: 1;
+    transform: translate(-50%, -50%);
+
+}
+
+
+.language{
+    margin-top: 60px;
+    margin-bottom: 80px;
+}
+.lang-header{
+    
+width: 300px;
+margin: auto;
+position: relative;
+padding-top: 45px;
+margin-bottom: 80px;
+
+}
+.lang-header::before{
+        content: "";
+        position: absolute;
+        width: 20%;
+        height: 3px;
+        background: #f15a28;
+        left: 50%;
+        transform: translate(-50%);
+    }
+
+.lang-header h1{
+        margin-top: 8px;
+    }
+
+.lang-content-items p{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.lang-content-items a{
+    margin-top: 15px;
+    text-transform: uppercase;
+    font-size: 15px;
+    font-family: 'Open Sans', sans-serif;
+
+}
+
+.lang-content {
+    display: flex;
+    overflow: hidden;
+}
+
+.lang-content-items{
+   
+    padding: 20px;
+}
+
+.lang-content-items h3{
+    color:#28377e;
+    text-transform: uppercase;
+}
+
+
+
+.contact-us{
+	width: 100%;
+	height: 500px;
+	margin: auto;
+	background-color: #333366;
+	
+}
+
+.contact-us-header h1{
+
+    color: white;
+    padding-top: 25px;
+    
+
+}
+
+
+.contact-us-header{
+	width: 300px;
+	margin: auto;
+	position: relative;
+	color: #fff;
+	text-align: center;
+
+	padding-top: 50px;
+
+
+
+}
+
+.contact-us-header::before{
+	content: '';
+	width: 20%;
+	height: 3px;
+	background-color: #e76128;
+	position: absolute;
+	left: 105px;
+	margin-top: 5px;
+}
+
+
+
+
+.contact-us .form{
+	padding-top: 30px;
+	width: 80%;
+	margin: auto;
+	text-align: center;
+	margin-top: 50px;
+
+}
+.contact-us .form input{
+	margin-bottom: 15px;
+	background: transparent;
+	padding-bottom: 5px;
+	margin-top: 10px;
+	font-size: 16px;
+	width: 40%;
+	height: 20px;
+	color: white;
+	border: none;
+	border-bottom: 1px #6c64a0 solid;
+
+
+}
+.contact-us .form-button{
+	width: 30%;
+	margin: auto;
+	text-align: center;
+	margin-top: 30px;
+}
+.contact-us .form-button input{
+	padding: 9px 30px;
+	background: #e76128;
+	border: none;
+	text-transform: uppercase;
+	color: #fff;
+}
+
+
+
+footer{
+    
+    height: 50px;
+    align-items: center;
+    background: #0c1234;
+    padding-top: 35px;
+}
+
+.footer-left{
+    float: left;
+}
+.footer-right{
+    float: right;
+}
+.footer-left a{
+	color: #b1b7dd;
+	font-size: 16px;
+}
+.footer-right a{
+	margin-left: 20px;
+
+}
+.footer-right a i{
+	color: #b1b7dd;
+
+}
+.footer-right ul{
+    display: flex;
+    justify-content: flex-end;
+    font-size: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
